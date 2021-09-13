@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import TodoList from '../views/TodoList.vue'
+import UserList from '../views/UserList.vue'
 
 Vue.use(VueRouter)
 
@@ -22,7 +23,12 @@ const routes = [
   {
 	path: '/todo-list',
 	name: 'TodoList',
-	component: () => import('../views/TodoList.vue')
+	component: TodoList
+  },
+  {
+	path: '/user-list',
+	name: 'UserList',
+	component: UserList
   }
 ]
 
